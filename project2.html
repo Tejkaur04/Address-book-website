@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lodge</title>
+    <style>
+        .header{
+            background-color:#265073;
+            padding: 10px;
+        }
+       .navbar{
+        text-align: left;
+
+       } 
+       .personal{
+        text-align: right;
+        display: inline-block;
+        float: right;
+       }
+       .heading{
+        font-family:QUARTZO ;
+        font-size: 40px ;
+        color: beige;
+        }
+        .logo{
+            display:flex;
+            justify-content: left;
+            align-items: left;
+            height:0vh;
+            width: 100vh;
+        }
+        .photo{
+            border-radius: 50%;
+        }
+        body{
+            background-color:#FFEBD8 ;
+            background-image:https://w7.pngwing.com/pngs/728/198/png-transparent-tokyo-building-house-graphy-residential-area-japan-town-building-eight-building-photography-condominium.png ;
+        
+        }
+        .p{
+        }
+        .home,.add,.get,.mail{
+             background-color: #265073;
+             border: none;
+             color: #9AD0C2;
+             padding: 16px 16px;
+             text-align: center;
+             font-size: 16px;
+             margin: 4px 2px;
+             transition: 0.3s;
+        }
+
+        .home:hover,.add:hover,.get:hover,.mail:hover {
+             background-color:#FFEBD8 ;
+             color:#265073;
+        }
+        .login,.signup{
+            background-color: #265073;
+             border: 2px solid#FFEBD8;
+             color: #FFF2D8;
+             padding: 16px 16px;
+             text-align: center;
+             font-size: 16px;
+             margin: 4px 2px;
+             transition: 0.3s;
+             cursor: pointer;
+        }
+        image{
+            display: block;
+            width: 800;
+            margin: 0 auto;
+            transition: 0.3s
+        }
+
+        .home:hover,.add:hover,.get:hover,.mail:hover {
+             background-color:# ;
+             color:#265073;
+         
+        } 
+        .right {
+             background-color: lightgray;
+             height: 100%;
+             width: 40%;
+             position: right;
+             z-index: 1;
+             top: 0;
+             overflow-x: hidden;
+             padding-top: 20px;
+             padding: 20px;
+             align-content: center;
+
+        }
+ 
+        .left {
+            background-color: lightgray;
+             left: 0;
+             float: left;
+             height: 100%;
+             width: 40%;
+             position: left;
+             z-index: 1;
+             top: 0;
+             overflow-x: hidden;
+             padding-top: 20px;
+             padding-left: 40px;
+             align-content: center;
+
+        }
+        
+        .right {
+             right: 0;
+             float:right;
+        }
+
+        
+
+       
+    </style>
+</head>
+<body>
+    <div class="header">
+     <div class="logo">
+             <img class="photo" src="C:\Users\HP\Downloads\logo.jpg" height="150px" width="150px">
+          </div>
+      <div  class="heading"><h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LODGE</h1></div>
+      
+        <HR>
+        <div class="navbar"><button class="home">HOME</button>
+            <button class="add">UPLOAD ADDRESS</button>
+            <BUTTON class="get">SAVED DIRECTORY</BUTTON>
+            <BUTTON  class="mail">MAIL</BUTTON>   
+            <div CLASS="personal"><button class="login">LOGIN</button>
+                <button class="signup">SIGNUP</button>
+            </div></div>
+            </div>
+    <script type="text/javascript">
+        let image = document.getElementById('image');
+        let images=['img7.jpg','img4.jpg','img6.jpg','img7.jpg','img1.jpg','img2.jpg']
+        setInterval(function() => {
+            let random = Math.floor(Math.random(*4));
+            img.src = images[random];
+            
+        }, 800);
+    </script>
+    
+
+    <p >mail mai mass mailing,birthday emails  </p><br>
+    <p> <center><h1>Features Included:</h1></center>
+    </p><br><br><br><br>
+       <div >
+        <div class="left">
+            <img src="https://banner2.cleanpng.com/20180511/qlw/kisspng-computer-icons-pen-notebook-clip-art-5af578f2cf6008.3311364415260367228494.jpg" height="100" width="100" >
+             <h2> 24/7 Access</h2>
+            <p>Access, edit, and upload your contacts from any device, anywhere, 24/7.</p>
+          
+        </div>
+        
+        <div class="right">
+          
+            <img src="C:\Users\HP\Downloads\images.png" height="100" width="100" >
+            <h2>Detailed Contact Notes</h2>
+            <p>You and your team members can use the Contact History to
+                make detailed notes about when anyone was last contacted.</p>
+          </div>
+        </div>
+        <div>
+            <div class="left">
+                <img src="C:\Users\HP\Downloads\image2.png" height="100" width="100" >
+                <h2>Map links added automatically</h2>
+                <p>When you add an address to your contacts, a map link is automatically created. You can click on the link and a new browser window will 
+                    automatically open with a map to your contact's address.</p>
+            </div>
+            <div class="right">
+          
+                <img src="C:\Users\HP\Downloads\image3.jpg" height="100" width="100" >
+                <h2>Control who sees what</h2>
+                <p>Your address books are private by default — addresses will only be visible to others if you actively change the share settings. Simple icons tell you at a glance who can see what,
+                     so you can be 100% sure only the right people have access.</p>
+              </div>
+            
+        </div> 
+        <div>
+            <div class="left">
+                <img src="C:\Users\HP\Downloads\calender.jpg" height="100" width="100" >
+                <h2>Remember important dates</h2>
+                <p>Add birthdays, anniversaries, and more 
+                    to a calendar and receive reminders about them by email.</p>
+            </div>
+            <div class="right">
+          
+                <img src="C:\Users\HP\Downloads\upload.jfif" height="100" width="100" >
+                <h2>Upload all your contacts</h2>
+                <p>It’s not a hassle to switch — import addresses & contacts from Outlook, Gmail, etc. easily.
+                 It's easy to export contacts too.</p>
+              </div>
+            
+        </div> 
+    
+</body>
+</html
