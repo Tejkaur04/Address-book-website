@@ -7,16 +7,18 @@
     <title>Address Book - homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Croissant+One&family=Major+Mono+Display&family=Pacifico&family=Press+Start+2P&family=Rajdhani:wght@300&family=Roboto+Condensed&family=Vina+Sans&display=swap" rel="stylesheet">
     <style>
+        /* Nav Bar CSS */
         * {
             margin: 0;
         }
 
         .navbar {
+            position: fixed;
             display: flex;
             height: 10vh;
-            width: 100vw;
+            width: 100%;
             background-color: rgb(18, 17, 19);
         }
 
@@ -62,23 +64,30 @@
             margin-right: 3vw;
             font-size: 1.2rem;
             height: 3.6vh;
+            font-family: Rajdhani;
         }
 
         .joinnow {
             margin-left: auto;
             margin-right: 1vw;
-            height: 6vh;
+            height: 5.7vh;
             width: 9.5vw;
             margin-top: 1.7vh;
-            border: 1px solid white;
+            border: 1px solid #F6D784;
             border-radius: 20px;
-            background-color: rgba(103, 102, 103, 0.181);
+            padding-top: 1.1vh;
         }
-
+        .joinnow:hover{
+            background-color: #dddddd14;
+            border-bottom: 1px solid red;
+            
+        }
         .deez {
-            margin: 0.8vh 0 0 1.5vw;
+            margin: 0 0 0 1.5vw;
             font-size: 1.3rem;
             color: white;
+            text-decoration: none;
+            font-family: Rajdhani;
         }
         .auugh{
             text-decoration: none;
@@ -86,6 +95,10 @@
             margin-right: 3vw;
             font-size: 1.2rem;
             height: 3.6vh;
+            font-family: Rajdhani;
+        }
+        .auugh:hover{
+            border-bottom: 1px solid #F6D784;
         }
 
         .dropdowncontent {
@@ -102,6 +115,9 @@
             padding: 12px 16px;
             text-decoration: none;
             display: block;
+            font-family: Rajdhani;
+            font-size: 1.2rem;
+            
         }
         .dropdownbox:hover  .dropdowncontent{
             display: block;
@@ -109,10 +125,72 @@
         .dropdowncontent a:hover{
             background-color: #ddd;
         }
+        .wuw:hover {
+            border-bottom: 1px solid #F6D784;
+        }
+        /* Main CSS */
+        .momos{
+            display: flex;
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+        }
+        .text{
+            height: 50vh;
+            width: 50vw;
+            padding-top: 25vh;
+            padding-left: 4vw;
+        }
+        .heads{
+            font-size: 3rem;
+            color: white;
+            font-family: Bebas Neue;
+        }
+        .something{
+            color: white;
+            font-family: Rajdhani;
+        }
+        .videoo{
+            height: 50vh;
+            width: 50vw;
+            padding-top: 15vh;
+        }
+        .oops{
+            height: 80vh;
+            width: 40vw;
+        }
+        .box{
+            margin-top: 5vh;
+            height: 5vh;
+            width: 8.2vw;
+            border: 1px solid #F6D784;
+            border-radius: 30px;
+            padding-left: 2vw;
+            padding-top: 1.1vh;
+        }
+        .pop{
+            text-decoration: none;
+            color: white;
+            font-family: Rajdhani;
+            font-size: 1.1rem;
+        }
+        .box:hover{
+            background-color: #dddddd14;
+            border-bottom: 1px solid red;
+        }
+
+        /* Second Slide CSS*/
+
+        .aloo{
+            height: 100vh;
+            width: 100%;
+            background-color:#F6D784 ;
+        }
     </style>
 </head>
 
 <body>
+    <!-- Nav Bar  -->
     <div class="navbar">
         <div class="main">
             <div class="first">
@@ -124,7 +202,7 @@
             </div>
         </div>
         <div class="anchor">
-            <a href="homepage.htm" class="wuw" style="border-bottom: 1px solid red;">Home</a>
+            <a href="homepage.htm" class="wuw" style="border-bottom: 1px solid #F6D784;">Home</a>
             <a href="#" class="wuw" style="color: rgba(255, 255, 255, 0.685);">About</a>
             <div class="dropdownbox">
                 <a href="#" class="auugh">Mail</a>
@@ -136,10 +214,27 @@
             </div>
         </div>
         <div class="joinnow">
-            <p class="deez">Join Now</p>
+            <a href="#" class="deez">Join Now</a>
         </div>
     </div>
+    <!-- Main -->
+    <div class="momos">
+        <div class="text">
+            <p class="heads">Your Ultimate Online Address Book! Seamless, Secure, and Free!</p>
+            <p class="something">Simplify Your Connections: Navigate Life with Our Free Online Address Book!</p>
+            <div class="box">
+                <a href="#" class="pop">Begin Now</a>
+            </div>
+        </div>
+        <div class="videoo">
+            <img src="https://d2ct96dh4lkill.cloudfront.net/assets/animations/stopwatch.svg?v=1700936681" alt="" class="oops">
+        </div>
+        
+    </div>
+    <!-- Second Slide -->
+    <div class="aloo">
 
+    </div>
 </body>
 
 </html>
