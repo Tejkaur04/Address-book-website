@@ -14,15 +14,16 @@
         }
 
         .navbar {
+            display: flex;
             height: 10vh;
             width: 100vw;
-            background-color: black;
+            background-color: rgb(18, 17, 19);
         }
 
         .main {
             display: flex;
             height: 10vh;
-            width: 30vw;
+            width: 40vw;
         }
 
         .first {
@@ -47,6 +48,67 @@
             color: white;
             font-family: 'Vina Sans', sans-serif;
         }
+
+        .anchor {
+            height: 10vh;
+            width: 50vw;
+            padding-top: 3vh;
+            display: flex;
+        }
+
+        .wuw {
+            text-decoration: none;
+            color: white;
+            margin-right: 3vw;
+            font-size: 1.2rem;
+            height: 3.6vh;
+        }
+
+        .joinnow {
+            margin-left: auto;
+            margin-right: 1vw;
+            height: 6vh;
+            width: 9.5vw;
+            margin-top: 1.7vh;
+            border: 1px solid white;
+            border-radius: 20px;
+            background-color: rgba(103, 102, 103, 0.181);
+        }
+
+        .deez {
+            margin: 0.8vh 0 0 1.5vw;
+            font-size: 1.3rem;
+            color: white;
+        }
+        .auugh{
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.685);
+            margin-right: 3vw;
+            font-size: 1.2rem;
+            height: 3.6vh;
+        }
+
+        .dropdowncontent {
+            display: none;
+            background-color: white;
+            margin-top: 3.2vh;
+            width: 120px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdowncontent a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .anchor:hover  .dropdowncontent{
+            display: block;
+        }
+        .dropdowncontent a:hover{
+            background-color: #ddd;
+        }
     </style>
 </head>
 
@@ -61,7 +123,21 @@
                 <p class="webname">Address Book</p>
             </div>
         </div>
-
+        <div class="anchor">
+            <a href="homepage.htm" class="wuw" style="border-bottom: 1px solid red;">Home</a>
+            <a href="#" class="wuw" style="color: rgba(255, 255, 255, 0.685);">About</a>
+            <div class="dropdownbox">
+                <a href="#" class="auugh">Mail</a>
+                <div class="dropdowncontent">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+            </div>
+        </div>
+        <div class="joinnow">
+            <p class="deez">Join Now</p>
+        </div>
     </div>
 
 </body>
