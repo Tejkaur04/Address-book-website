@@ -7,7 +7,14 @@
     <title>Address Book - homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Croissant+One&family=Major+Mono+Display&family=Pacifico&family=Press+Start+2P&family=Rajdhani:wght@300&family=Roboto+Condensed&family=Vina+Sans&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cinzel:wght@500&family=Croissant+One&family=Major+Mono+Display&family=Pacifico&family=Press+Start+2P&family=Rajdhani:wght@300&family=Roboto+Condensed&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    
     <style>
         /* Nav Bar CSS */
         * {
@@ -68,28 +75,69 @@
         }
 
         .joinnow {
-            margin-left: auto;
+            margin-top: 2vh;
             margin-right: 1vw;
-            height: 5.7vh;
-            width: 9.5vw;
-            margin-top: 1.7vh;
-            border: 1px solid #F6D784;
-            border-radius: 20px;
-            padding-top: 1.1vh;
-        }
-        .joinnow:hover{
-            background-color: #dddddd14;
-            border-bottom: 1px solid red;
-            
-        }
-        .deez {
-            margin: 0 0 0 1.5vw;
-            font-size: 1.3rem;
+            width: 8vw;
+            height: 3vh;
+            padding: 1vh 0 1vw 1vh;
+            font-family: "Roboto", sans-serif;
+            font-weight: 500;
+            background: transparent;
+            outline: none !important;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            border: 2px solid rgb(255, 255, 255);
+            z-index: 1;
             color: white;
-            text-decoration: none;
-            font-family: Rajdhani;
+            border-radius: 5px;
         }
-        .auugh{
+
+        .joinnow:hover {
+            transform: translateY(-4px) translateX(-2px);
+            box-shadow: 2px 5px 0 0 #F6D784;
+
+        }
+
+        .joinnow:after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 100%;
+            top: 0;
+            left: 0;
+            direction: rtl;
+            z-index: -1;
+            background: rgb(255, 255, 255);
+            transition: all 0.3s ease;
+        }
+
+        .joinnow:hover {
+            color: rgb(0, 0, 0);
+        }
+
+        .joinnow:hover:after {
+            left: auto;
+            right: 0;
+            width: 100%;
+        }
+
+        .joinnow:active {
+            top: 2px;
+        }
+
+        .deez {
+            margin: 0 0 2vh 1.4vw;
+            font-size: 1.1rem;
+            color: #F6D784;
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Vina Sans', sans-serif;
+
+        }
+
+        .auugh {
             text-decoration: none;
             color: rgba(255, 255, 255, 0.685);
             margin-right: 3vw;
@@ -97,7 +145,8 @@
             height: 3.6vh;
             font-family: Rajdhani;
         }
-        .auugh:hover{
+
+        .auugh:hover {
             border-bottom: 1px solid #F6D784;
         }
 
@@ -117,74 +166,276 @@
             display: block;
             font-family: Rajdhani;
             font-size: 1.2rem;
-            
+
         }
-        .dropdownbox:hover  .dropdowncontent{
+
+        .dropdownbox:hover .dropdowncontent {
             display: block;
         }
-        .dropdowncontent a:hover{
+
+        .dropdowncontent a:hover {
             background-color: #ddd;
         }
+
         .wuw:hover {
             border-bottom: 1px solid #F6D784;
         }
+
         /* Main CSS */
-        .momos{
+        .momos {
             display: flex;
             height: 100vh;
-            width: 100%;
+            width: 120%;
             background-color: black;
         }
-        .text{
+
+        .text {
             height: 50vh;
             width: 50vw;
             padding-top: 25vh;
             padding-left: 4vw;
         }
-        .heads{
+
+        .heads {
             font-size: 3rem;
             color: white;
             font-family: Bebas Neue;
         }
-        .something{
+
+        .something {
             color: white;
             font-family: Rajdhani;
         }
-        .videoo{
+
+        .videoo {
             height: 50vh;
             width: 50vw;
             padding-top: 15vh;
         }
-        .oops{
+
+        .oops {
             height: 80vh;
             width: 40vw;
         }
-        .box{
+
+        .box {
             margin-top: 5vh;
             height: 5vh;
             width: 8.2vw;
-            border: 1px solid #F6D784;
+            border: 1px solid #dab85c;
             border-radius: 30px;
             padding-left: 2vw;
             padding-top: 1.1vh;
         }
-        .pop{
+
+        button-28 {
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 16px;
+            font-weight: 600;
+            padding: 16px 24px;
+            text-align: center;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            width: 100%;
+            will-change: transform;
+        }
+
+        .pop {
             text-decoration: none;
             color: white;
             font-family: Rajdhani;
             font-size: 1.1rem;
         }
-        .box:hover{
-            background-color: #dddddd14;
-            border-bottom: 1px solid red;
+
+        .box:hover {
+            color: rgb(230, 87, 87)636;
+            background-color: #d6ae40;
+            box-shadow: rgb(112, 112, 16) 0 8px 15px;
+            transform: translateY(-2px);
+        }
+
+        .scrolldown {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            background: #0c0b0b;
+            transform: translateY(-80px) translateX(-50%) rotate(45deg);
+        }
+
+        .scrolldown span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid #fff;
+            border-right: 2px solid #fff;
+            animation: animate 1.5s linear infinite;
+            opacity: -5;
+
+        }
+
+        .scrolldown span:nth-child(1) {
+            transform: translate(-15px, -15px);
+            animation-delay: -0.4s;
+        }
+
+        .scrolldown span:nth-child(2) {
+            transform: translate(10, -15px);
+            animation-delay: -0.2s;
+        }
+
+        .scrolldown span:nth-child(3) {
+            transform: translate(15px, 15px);
+            animation-delay: 0;
+        }
+
+        @keyframes animate {
+            0% {
+                top: -5px;
+                left: -5px;
+                opacity: 0;
+            }
+
+            25% {
+                top: 0px;
+                left: 0px;
+                opacity: 1;
+            }
+
+
+            100% {
+                top: 5px;
+                left: 5px;
+                opacity: 0;
+            }
         }
 
         /* Second Slide CSS*/
 
-        .aloo{
+        .wrap-text {
+            height: 80vh;
+            width: 120%;
+            background-color: #F6D784;
+            position: relative;
+        }
+
+        .text-layer {
+            position: absolute;
+            width: 120%;
+            height: auto;
+            top: 0;
+            left: 0;
+            padding: 30px;
+            text-align: center;
+            font-size: 32px;
+            line-height: 1.2;
+            pointer-events: none;
+        }
+
+        .main_container {
+            padding: 5vh;
+            padding-top: 20vh;
+
+        }
+        .div1_img{
+            padding-top: 1vh;
+            padding-left: 4vw;
+        }
+
+        .div1 {
+            margin: 2.5vh;
+            
+
+            float: left;
+            background-color: rgb(172, 54, 172);
+            height: 40vh;
+            width: 20vw;
+            box-shadow: #0c0b0b;
+            border-radius: 15%;
+        }
+        .div2_img{
+            padding-top: 1vh;
+            padding-left: 4vw;
+
+        }
+
+        .div2 {
+            margin: 2.5vh;
+            float: left;
+            background-color: purple;
+            height: 40vh;
+            width: 20vw;
+            box-shadow: #0c0b0b;
+            color: #fff;
+            border-radius: 15%;
+
+        }
+        .div3_img{
+            padding-top: 1vh;
+            padding-left: 4vw;
+            border-radius: 50%;
+
+        }
+
+        .div3 {
+            margin: 2.5vh;
+            float: left;
+            background-color: rgb(204, 60, 204);
+            height: 40vh;
+            width: 20vw;
+            box-shadow: #0c0b0b;
+            border-radius: 15%;
+
+        }
+        .div4_img{
+            padding-top: 1vh;
+            padding-left: 4vw;
+
+        }
+
+        .div4 {
+            margin: 2.5vh;
+            float: left;
+            background-color: purple;
+            height: 40vh;
+            width: 20vw;
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            color: #ddd;
+            border-radius: 15%;
+
+        }
+
+        
+       
+        /* 3rd slide*/
+        .funny{
+            background-color: black;
             height: 100vh;
-            width: 100%;
-            background-color:#F6D784 ;
+            width: 110vw;
+        }
+        .friends{
+            margin: 50px;
+            height: 70vh;
+            width: 30vw;
+            float: left;
+            border-radius: 5%;
+        }
+        .quote{
+            font-size: 4rem;
+            padding-top: 35vh;
+            
+            color: #ddd;
         }
     </style>
 </head>
@@ -198,7 +449,7 @@
 
             </div>
             <div class="name">
-                <p class="webname">Address<span style="color: #F6D784;" >Book</span></p>
+                <p class="webname">Address<span style="color: #F6D784;">Book</span></p>
             </div>
         </div>
         <div class="anchor">
@@ -210,31 +461,89 @@
                     <a href="#">Link 1</a>
                     <a href="#">Link 2</a>
                     <a href="#">Link 3</a>
-                  </div>
+                </div>
             </div>
         </div>
         <div class="joinnow">
-            <a href="#" class="deez">Join Now</a>
+            <a href="signup.html" class="deez">Join Now</a>
         </div>
     </div>
     <!-- Main -->
     <div class="momos">
         <div class="text">
-            <p class="heads">Your Ultimate Online Address Book! Seamless, Secure, and <span style="color: #F6D784;">Free!</span></p>
+            <p class="heads">Your Ultimate Online Address Book! Seamless, Secure, and <span
+                    style="color: #F6D784;">Free!</span></p>
             <p class="something">Simplify Your Connections: Navigate Life with Our Free Online Address Book!</p>
             <div class="box">
-                <a href="#" class="pop">Begin Now</a>
+                <a href="loginform.html" class="pop">Begin Now</a>
             </div>
         </div>
         <div class="videoo">
-            <img src="https://d2ct96dh4lkill.cloudfront.net/assets/animations/stopwatch.svg?v=1700936681" alt="" class="oops">
+            <img src="https://d2ct96dh4lkill.cloudfront.net/assets/animations/stopwatch.svg?v=1700936681" alt=""
+                class="oops">
+        </div>
+        <div class="scrolldown">
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+    </div>
+    <!-- Second Slide -->
+
+    <div class="wrap-text">
+        <div class="text-layer">
+            <p class="How">
+            <h1>
+                How does it work?
+            </h1>
+            </p>
+        </div>
+
+        <div class="main_container">
+            
+            <div class="div1">
+                <img src="C:\Users\HP\Downloads\4821951.png" height="150px" width="150px" class="div1_img">
+
+                <center><h3> Create your own address book.</h3>
+                You will get your own secure online address book.</center>
+            </div>
+            <div class="div2">
+                <img src="C:\Users\HP\Downloads\link+network+share+sharing+icon-1320168265076787468.png" class="div2_img" height="150px" width="150px">
+                <center><h3> Share your invite link with contacts.</h3>
+                Share on Messenger, Whatsapp, Facebook, SMS, you name it.</center>
+            </div>
+            <div class="div3">
+                <img src="C:\Users\HP\Downloads\images__1_-removebg-preview.png" class="div3_img" height="150px" width="150px">
+                <center><h3>They save their address.</h3>
+                Your contacts can quickly add their address to your address book.</center>
+            </div>
+            <div class="div4">
+                <img src="C:\Users\HP\Downloads\5625642-removebg-preview.png" class="div4_img" height="150px" width="150px">
+                <center><h3>Easily create address labels.</h3>
+                Download address labels to DIY or have them printed and delivered to your home.</center>
+
+
+            </div>
+        </div>
+       
+
+
+
+    </div>
+    
+    <!--3rd slide-->
+    <div class="funny">
+        <div class="cheers">
+        <img src="C:\Users\HP\Downloads\b1f0c759d9ab4bf80671ddd24ab2e3a2.jpg" alt="frinds" class="friends">
+        </div>
+        <div class="quote">
+           <p><b> Keep in touch with <br>the people that matter!</b></p>
         </div>
         
     </div>
-    <!-- Second Slide -->
-    <div class="aloo">
 
-    </div>
 </body>
 
 </html>
