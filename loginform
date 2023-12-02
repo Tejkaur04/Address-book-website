@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .box{
+            background-color: white;
+            height: 85vh;
+            width: 42vw;
+            box-shadow: 2px grey;
+            margin-left: 30vw;
+            margin-top: 8vh;
+            border-radius: 8px;
+        }
+        body{
+            background-color: rgb(182, 182, 41);
+        }
+        .pop{
+            text-align: center;
+            font-size: 2rem;
+        }
+        .no{
+            font-size: 1.5rem;
+            margin-left: 5vw;
+        }
+        .ppo{
+            height: 5vh;
+            width: 30vw;
+            margin-left: 5vw;
+            border: none;
+            border-bottom: 1px solid ;
+            outline: 0;
+        }
+        .book{
+            margin-left: 5vw;
+            height: 6vh;
+            border-radius: 12px;
+            border: 1px solid;
+            width: 15vw;
+            
+        }
+        .lol{
+            height: 6vh;
+            width: 15vw;
+            border-radius: 10px;
+            border: 1px solid ;
+        }
+        .book:hover ,.lol:hover{
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><p class="pop" >Address Book</p><br><br>
+        <form action="">
+    <span class="no" >Name:</span> <br><input type="text" name="" class="ppo" placeholder="Enter your full name" required>
+    <br><br>
+    <span class="no">Email: </span><br><input type="email" name="" class="ppo"  required placeholder="Enter your email address">
+    <br><br>
+    <span class="no">Address:</span><br><input type="text" class="ppo" required  placeholder="Enter your address" id="">
+    <br><br>
+    <span class="no">Contact:</span><br><input type="number" class="ppo"  required placeholder="Enter your contact number" id="">
+    <br><br>
+    <span class="no">Birthday:</span><br><input type="date" class="ppo" required id="">
+    <br><br>
+    <button class="book" >Save Contact</button>
+    <input type="reset" value="Reset Details" class="lol" >
+    </form>
+    </div>
+    
+</body>
+</html>
